@@ -2,7 +2,7 @@
 
 A small website for day 1 of **Frontend Development**.
 
-It fixed by @pepe Josef Pospisil
+It is fixed by @pepe Josef Pospisil
 
 ## What you need
 
