@@ -1,0 +1,287 @@
+:root {
+  color-scheme: light;
+  --leaf: #2f6b3a;
+  --leaf-light: #e8f1e5;
+  --paper: #fbfaf5;
+  --ink: #202520;
+  --muted: #665c52;
+  --line: #d4e0d1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--leaf);
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--leaf);
+  color: #fff;
+}
+
+.site-header a {
+  color: #fff;
+}
+
+.site-name {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.site-header nav {
+  margin-left: auto;
+}
+
+.site-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lavender-page {
+  width: min(100% - 2rem, 68rem);
+  margin: 0 auto;
+  padding: 1.25rem 0 3rem;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 1.1rem 0 0.5rem;
+  font-size: 1.18rem;
+}
+
+h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+.herb-panel {
+  background: #fff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+a:focus-visible {
+  outline: 3px solid #c08a36;
+  outline-offset: 3px;
+}
+
+.information-section {
+  padding: 1.2rem 1.25rem 1.75rem;
+}
+
+.information-section + .information-section {
+  border-top: 1px solid var(--line);
+}
+
+.overview-grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.overview-copy {
+  padding: 0.25rem 0;
+}
+
+.overview-copy .lead {
+  margin-bottom: 0.9rem;
+  font-size: 1.05rem;
+}
+
+.quick-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+}
+
+.quick-facts div {
+  min-height: 3.5rem;
+  padding: 0.55rem;
+  border: 1px solid var(--line);
+}
+
+.quick-facts dt {
+  font-weight: 700;
+}
+
+.quick-facts dd {
+  margin: 0.1rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.flower-illustration {
+  min-width: 0;
+}
+
+.flower-art,
+.wide-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.flower-art {
+  aspect-ratio: 5 / 3;
+}
+
+.wide-art {
+  max-width: 31rem;
+  margin-bottom: 1.1rem;
+}
+
+.care-art,
+.medicinal-art {
+  aspect-ratio: 36 / 8.5;
+}
+
+.care-tip {
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+}
+
+.section-divider {
+  height: 1px;
+  margin: 1.5rem 0;
+  background: var(--line);
+}
+
+.care-columns {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.care-columns ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.garden-note {
+  margin: 1.5rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-left: 3px solid var(--leaf);
+  background: var(--leaf-light);
+}
+
+.medicinal-panel > p {
+  max-width: 68rem;
+}
+
+.source-link {
+  margin-top: 1.15rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+.page-section {
+  margin-top: 2rem;
+}
+
+.about-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 1rem max(calc((100vw - 68rem) / 2), 1rem);
+  background: var(--leaf-light);
+}
+
+.page-section h2 {
+  margin-bottom: 0.85rem;
+  font-size: 1.3rem;
+}
+
+.suggested-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer {
+  padding: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (min-width: 48rem) {
+  .lavender-page {
+    width: min(100% - 4rem, 68rem);
+    padding-top: 0.5rem;
+  }
+
+  .overview-grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(22rem, 1fr);
+    gap: 1.5rem;
+  }
+
+  .care-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+}
+
+@media (max-width: 30rem) {
+  .lavender-page {
+    width: min(100% - 1.25rem, 68rem);
+  }
+
+  .information-section {
+    padding: 1rem 0.8rem 1.25rem;
+  }
+
+  .quick-facts {
+    gap: 0.35rem;
+  }
+
+  .quick-facts div {
+    padding: 0.45rem 0.35rem;
+    font-size: 0.9rem;
+  }
+}

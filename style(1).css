@@ -1,0 +1,614 @@
+/* The Little Herb Garden */
+
+:root {
+  --leaf: #2f6b3a;
+  --leaf-light: #e7f1e4;
+  --soil: #5b4636;
+  --paper: #fbfaf5;
+  --ink: #1f2420;
+  --line: #cfdccb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+a {
+  color: var(--leaf);
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--leaf);
+  color: white;
+}
+
+.site-header a {
+  color: white;
+}
+
+.site-name {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+.intro {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.latin {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+  color: var(--soil);
+}
+
+.life {
+  display: inline-block;
+  margin: 0;
+  padding: 0.1rem 0.6rem;
+  border-radius: 1rem;
+  background: var(--leaf-light);
+  font-size: 0.875rem;
+}
+
+.site-footer {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 1.5rem 1.25rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--soil);
+  background: #f5f0e7;
+}
+
+.footer-brand h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.footer-brand p,
+.footer-copy {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-links a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  max-width: 60rem;
+  padding: 1.5rem;
+}
+
+.page > .hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  color: var(--leaf);
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  line-height: 1.1;
+}
+
+.hero-copy > p:not(.latin) {
+  margin: 0.75rem 0;
+}
+
+.hero-art {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.hero-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.facts > div {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.65rem;
+  border-radius: 0.4rem;
+  background: var(--leaf-light);
+}
+
+.facts small {
+  color: var(--soil);
+}
+
+.page > .grow,
+.page > .uses {
+  margin-bottom: 2rem;
+}
+
+.section-intro {
+  max-width: 46rem;
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.card-grid .card {
+  padding: 1rem;
+  border-color: #e2e6df;
+  border-radius: 0.45rem;
+}
+
+.card-grid .card h3 {
+  margin: 0.4rem 0;
+}
+
+.card-grid .card p {
+  margin-bottom: 0;
+}
+
+.icon {
+  display: inline-grid;
+  width: 1.8rem;
+  height: 1.8rem;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--leaf);
+  background: var(--leaf-light);
+}
+
+.uses-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 0 0.75rem;
+}
+
+.uses-grid h3 {
+  margin-bottom: 0.5rem;
+}
+
+.uses-grid ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.garden-note {
+  margin: 0 0 2rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--leaf);
+  background: var(--leaf-light);
+}
+
+.page .site-footer {
+  margin: 0 -1.5rem -1.5rem;
+}
+
+@media (max-width: 42rem) {
+  .page > .hero,
+  .uses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page > .hero {
+    gap: 1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 28rem) {
+  .page {
+    padding: 1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page .site-footer {
+    margin: 0 -1rem -1rem;
+  }
+}
+
+.lav-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem max(1rem, calc((100% - 60rem) / 2));
+  border-bottom: 1px solid #e6dced;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.lav-page-brand {
+  color: #4b3a61;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.lav-page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.lav-page-header nav a,
+.lav-page-footer a {
+  color: #6d568a;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.lav-page-header nav a:hover,
+.lav-page-footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.lavender-page {
+  --lavender-ink: #292533;
+  --lavender-purple: #6d568a;
+  --lavender-deep: #4b3a61;
+  --lavender-pale: #f1edf5;
+  --lavender-line: #e5deeb;
+  max-width: 68rem;
+  padding: 2.25rem;
+  color: var(--lavender-ink);
+}
+
+.lavender-page > .hero {
+  grid-template-columns: 1fr 1fr;
+  gap: 2.25rem;
+  margin-bottom: 3rem;
+}
+
+.lavender-page .hero-copy h1 {
+  color: var(--lavender-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+
+.lavender-page .latin {
+  margin: 0.25rem 0 1.25rem;
+  color: #786e81;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+}
+
+.lavender-page .hero-copy > p:not(.latin) {
+  max-width: 34rem;
+  color: #57515f;
+  line-height: 1.7;
+}
+
+.lavender-page .hero-art {
+  padding: 0.6rem;
+  border-radius: 2rem 2rem 2rem 0.5rem;
+  background: linear-gradient(145deg, #f4eef8, #e4f0e5);
+  box-shadow: 0 1.25rem 3rem rgba(75, 58, 97, 0.12);
+}
+
+.lavender-page .facts {
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.lavender-page .facts > div {
+  padding: 0.8rem;
+  border: 1px solid #e3dbea;
+  background: #f5f1f7;
+}
+
+.lavender-page .facts strong {
+  color: var(--lavender-deep);
+}
+
+.lavender-page > .grow,
+.lavender-page > .uses {
+  margin-bottom: 3rem;
+}
+
+.lavender-page h2 {
+  color: var(--lavender-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.lavender-page .section-intro {
+  max-width: 48rem;
+  color: #625b69;
+}
+
+.lavender-season {
+  margin: 0 0 3rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid #e5deeb;
+  border-radius: 1rem;
+  background: #f5f1f7;
+}
+
+.season-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.season-heading h2 {
+  margin-bottom: 0;
+}
+
+.season-heading > p,
+.season-eyebrow {
+  color: #706a78;
+}
+
+.season-eyebrow {
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lavender-season .lav-season-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.lavender-season .lav-season-tabs button {
+  padding: 0.55rem 1rem;
+  border: 1px solid #d7cadd;
+  border-radius: 999px;
+  color: #4b3a61;
+  background: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+.lavender-season .lav-season-tabs button:hover,
+.lavender-season .lav-season-tabs button.is-active {
+  border-color: #2f6b3a;
+  color: white;
+  background: #2f6b3a;
+}
+
+.lavender-season .lav-season-tabs button:focus-visible {
+  outline: 3px solid #bd9ce0;
+  outline-offset: 2px;
+}
+
+.season-tip {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: white;
+}
+
+.season-tip > span {
+  color: #6d568a;
+  font-size: 1.5rem;
+}
+
+.season-tip h3 {
+  margin: 0 0 0.35rem;
+  color: #4b3a61;
+}
+
+.season-tip p {
+  margin: 0;
+  color: #57515f;
+}
+
+.lavender-page .card-grid {
+  gap: 1rem;
+}
+
+.lavender-page .card-grid .card {
+  min-height: 100%;
+  padding: 1.25rem;
+  border: 1px solid var(--lavender-line);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(75, 58, 97, 0.05);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.lavender-page .card-grid .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.9rem 2rem rgba(75, 58, 97, 0.1);
+}
+
+.lavender-page .card-grid .card h3,
+.lavender-page .uses-grid h3 {
+  color: var(--lavender-deep);
+}
+
+.lavender-page .icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: var(--lavender-purple);
+  background: var(--lavender-pale);
+}
+
+.lavender-page .uses-grid {
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.lavender-page .uses-grid > div {
+  padding: 1rem 0;
+}
+
+.lavender-page .uses-grid li,
+.lavender-page .uses-grid p {
+  color: #57515f;
+}
+
+.lavender-page .uses-grid li + li {
+  margin-top: 0.5rem;
+}
+
+.lavender-page .garden-note {
+  margin-bottom: 2.5rem;
+  padding: 1rem 1.25rem;
+  border-left-color: var(--lavender-purple);
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: #51475b;
+  background: #f1edf5;
+}
+
+.lav-page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--lavender-line);
+}
+
+.lav-page-footer h2 {
+  margin: 0 0 0.35rem;
+  color: var(--lavender-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+}
+
+.lav-page-footer p {
+  margin: 0;
+  color: #706a78;
+}
+
+@media (max-width: 42rem) {
+  .lavender-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .lavender-page > .hero {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .lav-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .lav-page-header nav {
+    margin-left: 0;
+  }
+
+  .lav-page-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .season-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

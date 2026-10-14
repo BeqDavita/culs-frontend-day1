@@ -20,8 +20,16 @@ function element(tag, className, text) {
 
 function card(herb) {
   const item = element("li", "card", "")
+  const title = element("h3", "name", "")
+  if (herb.name === "Lavender" || herb.name === "Chives") {
+    const link = element("a", "", herb.name)
+    link.href = herb.name === "Lavender" ? "Lavander.html" : "Chives.html"
+    title.append(link)
+  } else {
+    title.textContent = herb.name
+  }
   item.append(
-    element("h3", "name", herb.name),
+    title,
     element("p", "latin", herb.latin),
     element("p", "use", herb.use),
     element("p", "life", herb.life))

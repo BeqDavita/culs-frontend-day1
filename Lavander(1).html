@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lavender — Garden Guide</title>
+  <link rel="stylesheet" href="style(1).css" />
+  <script src="Lavander(1).js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="site-name" href="index.html">The Little Herb Garden</a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#grow">Growing</a></li>
+      <li><a href="#uses">Uses</a></li>
+      <li><a href="index.html#herbs">All herbs</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="page lavender-page" id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Lavender</h1><p class="latin">Lavandula angustifolia</p>
+      <p>A fragrant, sun-loving herb with purple flower spikes and silvery-green leaves. Lavender brings colour to the garden and a gentle scent to drawers, crafts and quiet moments.</p>
+      <p>Give it sunshine, well-drained soil and a little room to grow. Once established, it is wonderfully low-maintenance.</p>
+      <div class="facts"><div><strong>Full sun</strong><small>Light</small></div><div><strong>Low</strong><small>Water</small></div><div><strong>Perennial</strong><small>Life cycle</small></div></div>
+    </div>
+    <div class="hero-art" aria-label="Illustration of lavender flowers in a sunny garden">
+      <svg viewBox="0 0 540 355" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lavender in the garden">
+        <rect width="540" height="355" fill="#dff2f0"/><circle cx="452" cy="65" r="34" fill="#e7bd48"/>
+        <path d="M0 244 Q90 204 174 239 T345 237 T540 240 V355 H0Z" fill="#a4be81"/>
+        <rect x="51" y="244" width="440" height="70" rx="4" fill="#835a43"/>
+        <g fill="#7e9b64"><ellipse cx="92" cy="253" rx="29" ry="10"/><ellipse cx="150" cy="253" rx="25" ry="9"/><ellipse cx="208" cy="252" rx="25" ry="10"/><ellipse cx="345" cy="252" rx="25" ry="10"/><ellipse cx="432" cy="258" rx="26" ry="9"/></g>
+        <g stroke="#597957" stroke-width="4" stroke-linecap="round"><path d="M123 249 L123 120"/><path d="M174 249 L174 97"/><path d="M220 250 L220 131"/><path d="M277 250 L277 117"/><path d="M328 250 L328 92"/><path d="M373 250 L373 133"/><path d="M419 250 L419 106"/></g>
+        <g fill="#84718f"><ellipse cx="123" cy="125" rx="10" ry="21" transform="rotate(12 123 125)"/><ellipse cx="125" cy="105" rx="9" ry="18"/><ellipse cx="174" cy="103" rx="13" ry="19"/><ellipse cx="176" cy="80" rx="9" ry="18"/><ellipse cx="220" cy="137" rx="11" ry="20"/><ellipse cx="224" cy="118" rx="9" ry="17"/><ellipse cx="277" cy="121" rx="12" ry="20"/><ellipse cx="278" cy="99" rx="9" ry="17"/><ellipse cx="328" cy="107" rx="13" ry="19"/><ellipse cx="329" cy="84" rx="9" ry="18"/><ellipse cx="373" cy="136" rx="11" ry="21"/><ellipse cx="375" cy="116" rx="9" ry="18"/><ellipse cx="419" cy="118" rx="13" ry="20"/><ellipse cx="418" cy="94" rx="9" ry="17"/></g>
+        <g><path d="M58 79 Q62 67 74 78 Q86 67 90 79 Q75 84 74 91 Q72 83 58 79Z" fill="#6e9860"/><path d="M74 88v14" stroke="#658c5b" stroke-width="3"/></g>
+      </svg>
+    </div>
+  </section>
+  <section class="grow" id="grow"><h2>How to grow lavender</h2><p class="section-intro">Lavender prefers conditions that feel a little like the Mediterranean: plenty of light, soil that drains easily, and no overwatering.</p>
+    <div class="card-grid">
+      <article class="card"><span class="icon">☀</span><h3>Sunshine</h3><p>Choose a spot with at least 8 hours of direct sun each day. More sun usually means stronger growth and more flowers.</p></article>
+      <article class="card"><span class="icon">◯</span><h3>Well-drained soil</h3><p>Light, sandy or gravelly soil is ideal. If your soil stays wet, grow lavender in a raised bed or a pot with drainage holes.</p></article>
+      <article class="card"><span class="icon">♧</span><h3>Water lightly</h3><p>Water young plants while they establish. Mature lavender is drought-tolerant, so let the soil dry between waterings.</p></article>
+      <article class="card"><span class="icon">✂</span><h3>Prune after flowering</h3><p>Trim off spent flower stems and lightly shape the plant. Avoid cutting deeply into old, woody growth.</p></article>
+      <article class="card"><span class="icon">♧</span><h3>Give it space</h3><p>Leave room around each plant for air to circulate. This helps foliage dry and keeps the plant healthier.</p></article>
+      <article class="card"><span class="icon">❀</span><h3>Be patient</h3><p>Lavender may take a season to settle in. Once established, it can return with fragrant flowers year after year.</p></article>
+    </div>
+  </section>
+  <section class="lavender-season" aria-labelledby="season-heading">
+    <div class="season-heading">
+      <div>
+        <p class="season-eyebrow">Care through the year</p>
+        <h2 id="season-heading">Lavender in every season</h2>
+      </div>
+      <p>Choose a season for a quick care tip.</p>
+    </div>
+    <div class="lav-season-tabs" role="group" aria-label="Choose a season">
+      <button type="button" class="is-active" data-season="spring" aria-pressed="true">Spring</button>
+      <button type="button" data-season="summer" aria-pressed="false">Summer</button>
+      <button type="button" data-season="autumn" aria-pressed="false">Autumn</button>
+      <button type="button" data-season="winter" aria-pressed="false">Winter</button>
+    </div>
+    <article class="season-tip" aria-live="polite">
+      <span aria-hidden="true">✿</span>
+      <div>
+        <h3 id="season-title">Spring</h3>
+        <p id="season-tip">Trim away any winter-damaged stems and give your plant a sunny spot with freely draining soil. Avoid heavy feeding; lavender prefers lean soil.</p>
+      </div>
+    </article>
+  </section>
+  <section class="uses" id="uses"><h2>A little lavender goes a long way</h2><div class="uses-grid"><div><h3>Ways to use it</h3><ul><li>Tie dried stems into small bunches for a room or wardrobe.</li><li>Add dried buds to handmade sachets and craft projects.</li><li>Enjoy the colour and fragrance in borders, pots and pollinator gardens.</li></ul></div><div><h3>When to harvest</h3><p>For fragrant bunches, cut flower stems when the first buds have opened, usually on a dry morning. Gather a small bunch and hang it upside down somewhere airy and out of direct sunlight.</p><p>Leave plenty of flowers for bees and other pollinators.</p></div></div></section>
+  <aside class="garden-note" id="garden-note">Garden note: Lavender is loved by bees. Avoid spraying flowers with pesticides, and let some blooms remain for visiting pollinators.</aside>
+  <footer class="lav-page-footer">
+    <div><h2>Visit the garden</h2><p>Grow something lovely, one sunny day at a time.</p></div>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</main>
+</body>
+</html>
