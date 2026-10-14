@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title description">
+  <title id="title">Chives in bloom</title>
+  <desc id="description">Slender green chive leaves and stems with round purple flowers in a garden.</desc>
+  <defs>
+    <style>
+      @keyframes chive-sway {
+        0%, 100% { transform: rotate(0deg); }
+        35% { transform: rotate(-1.2deg); }
+        72% { transform: rotate(1.5deg); }
+      }
+      @keyframes chive-bloom-sway {
+        0%, 100% { transform: rotate(0deg); }
+        40% { transform: rotate(-2.5deg); }
+        75% { transform: rotate(1.8deg); }
+      }
+      .chive-stems {
+        transform-box: view-box;
+        transform-origin: 50% 86%;
+        animation: chive-sway 6s ease-in-out infinite;
+      }
+      .bloom-cluster {
+        transform-box: view-box;
+        animation: chive-bloom-sway 4.8s ease-in-out infinite;
+      }
+      .bloom-one { transform-origin: 339px 68px; animation-delay: -1.2s; }
+      .bloom-two { transform-origin: 407px 53px; animation-delay: -2.8s; }
+      .bloom-three { transform-origin: 472px 102px; animation-delay: -0.6s; }
+      .bloom-four { transform-origin: 259px 115px; animation-delay: -3.6s; }
+      @media (prefers-reduced-motion: reduce) {
+        .chive-stems,
+        .bloom-cluster { animation: none; }
+      }
+    </style>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e3efdf" />
+      <stop offset="1" stop-color="#f7f0dc" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="360" rx="16" fill="url(#sky)" />
+  <circle cx="590" cy="75" r="37" fill="#f5d98b" />
+  <path d="M0 294 Q176 258 358 292 T720 281 V360 H0Z" fill="#a9bc8e" />
+  <g class="chive-stems">
+    <path d="M355 310 C353 224 348 132 339 64 M362 311 C368 215 386 131 408 48 M370 314 C379 227 430 157 473 100 M350 312 C324 235 292 167 260 112 M374 314 C405 250 473 215 535 190" fill="none" stroke="#55784d" stroke-width="9" stroke-linecap="round" />
+    <path d="M353 310 C347 223 336 155 326 104 M364 310 C377 231 398 169 430 113 M346 310 C322 255 302 217 276 178 M375 312 C413 266 458 241 500 225" fill="none" stroke="#789363" stroke-width="5" stroke-linecap="round" />
+    <g fill="#8664a0" stroke="#f4eef7" stroke-width="3">
+      <g class="bloom-cluster bloom-one">
+        <circle cx="339" cy="53" r="13"/><circle cx="322" cy="64" r="13"/><circle cx="330" cy="82" r="13"/><circle cx="350" cy="82" r="13"/><circle cx="357" cy="63" r="13"/><circle cx="339" cy="69" r="13"/>
+      </g>
+      <g class="bloom-cluster bloom-two">
+        <circle cx="407" cy="38" r="13"/><circle cx="390" cy="49" r="13"/><circle cx="398" cy="67" r="13"/><circle cx="418" cy="67" r="13"/><circle cx="425" cy="48" r="13"/><circle cx="407" cy="54" r="13"/>
+      </g>
+      <g class="bloom-cluster bloom-three">
+        <circle cx="472" cy="89" r="12"/><circle cx="457" cy="99" r="12"/><circle cx="464" cy="116" r="12"/><circle cx="483" cy="116" r="12"/><circle cx="489" cy="98" r="12"/><circle cx="472" cy="104" r="12"/>
+      </g>
+      <g class="bloom-cluster bloom-four">
+        <circle cx="259" cy="101" r="12"/><circle cx="244" cy="111" r="12"/><circle cx="251" cy="128" r="12"/><circle cx="270" cy="128" r="12"/><circle cx="276" cy="110" r="12"/><circle cx="259" cy="116" r="12"/>
+      </g>
+    </g>
+    <g fill="#71895b">
+      <path d="M356 286 C298 267 264 262 224 266 C268 291 310 299 356 297Z" />
+      <path d="M370 277 C421 248 462 238 509 240 C466 271 423 284 370 288Z" />
+      <path d="M356 307 C316 294 289 294 256 303 C293 321 324 324 356 318Z" />
+    </g>
+  </g>
+</svg>

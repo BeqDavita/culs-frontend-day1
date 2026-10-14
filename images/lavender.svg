@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="flower-title flower-description">
+  <title id="flower-title">Lavender flower</title>
+  <desc id="flower-description">A lavender stalk with thirteen purple blooms above green leaves.</desc>
+  <defs>
+    <linearGradient id="flower-sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d8e9df" />
+      <stop offset="1" stop-color="#f2e8c9" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="8" fill="url(#flower-sky)" />
+  <circle cx="485" cy="72" r="37" fill="#f6d98e" />
+  <path d="M0 310 Q150 274 300 306 T600 294 V360 H0Z" fill="#a8b98c" />
+  <path d="M302 350 C303 285 303 215 304 129" fill="none" stroke="#56764c" stroke-width="8" stroke-linecap="round" />
+  <path d="M300 294 C259 250 239 241 211 236 C239 270 264 287 300 302 M305 275 C344 236 367 224 395 219 C371 253 343 269 305 285 M301 322 C267 294 247 290 227 290 C250 316 275 329 301 332" fill="#71895c" />
+  <g fill="#698355">
+    <path d="M301 291 C271 275 253 268 232 262 C252 285 273 294 301 301Z" />
+    <path d="M306 265 C335 245 354 237 376 232 C357 255 337 266 306 275Z" />
+  </g>
+  <g fill="#7953a2" stroke="#fff" stroke-width="2">
+    <g transform="translate(282 192)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(306 184)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(278 164)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(307 156)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(281 136)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(308 128)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(279 108)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(309 100)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(283 80)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(311 74)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(286 54)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(311 49)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+    <g transform="translate(299 31)">
+      <circle cx="-7" cy="0" r="11"/><circle cx="7" cy="0" r="11"/><circle cx="0" cy="-8" r="11"/><circle cx="0" cy="8" r="11"/><circle fill="#f1dfba" stroke="none" r="4"/>
+    </g>
+  </g>
+</svg>
