@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,12 +7,29 @@
   <link rel="icon" href="images/Logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
+    <!-- JSON data about lavender (JSON-LD). Read by search engines; it does not change the page. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Thing",
+    "name": "Lavender",
+    "alternateName": "Lavandula angustifolia",
+    "description": "A silver-green shrub from the mint family with purple flower spikes. Perennial, from the Mediterranean, blooms June to August.",
+    "additionalProperty": [
+      { "@type": "PropertyValue", "name": "Life cycle", "value": "Perennial" },
+      { "@type": "PropertyValue", "name": "Origin", "value": "Mediterranean" },
+      { "@type": "PropertyValue", "name": "Blooms", "value": "June to August" },
+      { "@type": "PropertyValue", "name": "Height", "value": "30 to 90 cm" },
+      { "@type": "PropertyValue", "name": "Likes", "value": "Full sun, dry soil" }
+    ]
+  }
+  </script>
 </head>
-<body>
+<body class="lavender-page">
   <header class="site-header">
     <img class="logo" src="images/Logo.svg" alt="" width="48" height="48">
     <p class="site-name">The Little Herb Garden</p>
-    <nav>
+    <nav id="site-navigation" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="#facts">Facts</a></li>
@@ -21,6 +38,10 @@
         <li><a href="#uses">Uses</a></li>
       </ul>
     </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+      <span class="menu-toggle-icon" aria-hidden="true"></span>
+      <span class="menu-toggle-label">Menu</span>
+    </button>
   </header>
 
   <main>
@@ -32,8 +53,8 @@
           (in a good way).</p>
         <p><a href="index.html#herbs">← Back to all herbs</a></p>
       </div>
-      <img class="hero" src="images/lavender.svg" width="600" height="360"
-           alt="An illustration of a lavender stalk with purple blooms and green leaves">
+      <img class="hero" src="images/lavender-field.jpg" width="800" height="533"
+           alt="A field of lavender in bloom, with purple rows reaching the horizon">
     </section>
 
     <section id="facts">
@@ -120,14 +141,17 @@
 
     <section id="video">
       <h2>Lavender in 3 minutes</h2>
-      <p>Explore the plant illustration above and read the growing tips below.</p>
+      <video controls preload="none" poster="images/lavender-field.jpg">
+        <source src="videos/lavender.mp4" type="video/mp4">
+        <p>Your browser can't play this video.</p>
+      </video>
     </section>
 
     <section id="uses">
       <h2>What is lavender good for?</h2>
       <div class="uses">
-        <img src="images/lavender.svg" width="600" height="360" loading="lazy"
-             alt="An illustration of a lavender stalk with purple blooms and green leaves">
+        <img src="images/lavender-bee.jpg" width="600" height="400" loading="lazy"
+             alt="A bee collecting nectar from lavender flowers">
         <ul>
           <li><strong>Wardrobe:</strong> dried flowers in small cloth sachets.</li>
           <li><strong>Kitchen:</strong> a pinch in shortbread, honey or tea
@@ -141,9 +165,12 @@
 
     <section id="grow">
       <h2>Growing tips</h2>
-      <p>Give it sun, light soil and little water. Trim it lightly after
-        flowering, but never cut into the old brown wood, because it
-        will not regrow from there.</p>
+      <ul class="tips">
+        <li><strong>Sun</strong> Give it at least six hours of full sun a day.</li>
+        <li><strong>Soil</strong> Light, sandy and well drained. Wet soil rots the roots.</li>
+        <li><strong>Water</strong> Little and rarely, once the plant is established.</li>
+        <li><strong>Pruning</strong> Trim lightly after flowering, but never cut into the old brown wood, because it will not regrow from there.</li>
+      </ul>
     </section>
   </main>
 
